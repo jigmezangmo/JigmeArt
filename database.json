@@ -1,0 +1,22 @@
+{
+    "Customer": [
+      { 
+          "id": 1, 
+          "FirstName": "Jigme", 
+          "LastName": "Zangmo",
+          "Designation": "customer",
+          "Contact": "1778836", 
+          "Address": "Thimphu"
+        }
+    ],
+    "shoppingform": [
+        { 
+            "id": 1, 
+            "FirstName": "Jigme", 
+            "LastName": "Zangmo",
+            "Contact": "1778836", 
+            "Address": "Thimphu",
+            "City":"Thimphu"
+          }
+      ]
+  }
