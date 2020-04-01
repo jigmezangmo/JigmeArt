@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 .shopping-cart {
-    width: 900px;
+    width: 800px;
+    height: 600px;
     margin: 0 auto;
+    margin-top: 40px;
 }

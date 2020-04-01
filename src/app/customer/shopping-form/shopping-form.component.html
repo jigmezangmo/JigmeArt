@@ -1,34 +1,27 @@
-<app-customer></app-customer>
+
 <div class="shopping-form">
     
     <h2 style="text-align: center; color: #80a727;">SHOPPING FORM</h2>
-<div class="row">
-    <div class="col-md-6 form-group">
-        <input placeholder="First Name" class="form-control">
+<form>
+    <div class="form-group">
+        <label>Name</label>
+        <input type ="text" class="form-control">
     </div>
-    <div class="col-md-6 form-group">
-        <input placeholder="Last Name" class="form-control">
+    <div class="form-group">
+        <label>Address</label>
+        <input type ="text" class="form-control">
     </div>
-</div>
-<div class="row">
-    <div class="col-md-6 form-group">
-        <input placeholder="Contact" class="form-control">
+    <div class="form-group">
+        <label>Contact</label>
+        <input type ="tel" class="form-control">
     </div>
-    <div class="col-md-6 form-group">
-        <input placeholder="Address" class="form-control">
+    <div class="form-group">
+       <select class="custom-select">
+           <option selected> I am interested in </option>
+           <option *ngFor="let custom of customs">{{custom}}</option>
+       </select>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-6 form-group">
-        <input placeholder="City" class="form-control">
+    <div class="form-check">
+        <button class="btn btn-primary" type="submit">Place Order</button>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <button class="btn btn-success btn-block btn-lg">Place Order</button>
-    </div>
-    <div class="col-md-4">
-        <button class="btn btn-primary btn-block btn-lg">Clear</button>
-    </div>
-</div>
-</div>
+</form>

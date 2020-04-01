@@ -1,21 +1,31 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Customer } from '../customer/customer.module';
+import {Router} from '@angular/router';
+import { shoppingform } from '../customer/shopping-form/shopping.module';
 
 const headerOption = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
 }
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ShareService {
 
-mockurl = 'http://localhost:3000/Customer';
+mockurl = 'http://localhost:3000/shoppingform';
+
+currentShoppingform: shoppingform = {
+  id: null, 
+  FirstName:'', 
+  LastName:'',
+  Contact: null,
+  Address:''
+
+}
+  getAllShoppingforms: any;
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router
   ) { }
-  getAllCustomers():Observable<Customer[]>{
-    return this.http.get<Customer[]>(this.mockurl, headerOption);
+  getAllShoppingform():Observable<shoppingform[]>{
+    return this.http.get<shoppingform[]>(this.mockurl, headerOption);
   }
 }

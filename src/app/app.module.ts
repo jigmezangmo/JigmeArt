@@ -8,6 +8,8 @@ import { HomeModule } from './home/home.module';
 import { CustomerModule } from './customer/customer.module';
 import { AdminModule } from './admin/admin.module';
 import {HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import {ShareService} from './shared/share.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,9 +20,12 @@ import {HttpClientModule} from '@angular/common/http';
     CustomerModule,
     AdminModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
+    FormsModule
+  
   ],
-  providers: [],
+  providers: [ShareService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

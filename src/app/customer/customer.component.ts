@@ -15,12 +15,7 @@ export class CustomerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getAllCustomer();
+   
   }
-getAllCustomer(){
-  this.shareService.getAllCustomers().subscribe(
-    (data: Customer[]) => {
-      this.allCustomer = data;
-    }
-  )};
+
 }
