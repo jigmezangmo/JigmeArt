@@ -55,3 +55,53 @@ nav.main-nav > ul > li:hover > a {
     color:white;
     transition: all 0.3s;
 }
+.mainimg {
+    width: 980px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: -9999;
+    overflow: hidden;
+}
+.mainimg .slide {
+    width: 300;
+    height: 400px;
+    position: absolute;
+}
+.mainimg .slide img {
+    width: 980px;
+    height: 400px;
+    float: left;
+}
+
+div .new {
+    height: 750px;
+    margin-top: 20px;
+    border-top: 2px solid #abc32a;
+}
+div .new h3 {
+    margin: 20px 0 0 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #abc32a;
+}
+div .new .item {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 0 32px;
+}
+div .new .item img {display: block;}
+div .new .item .product {margin-top: 10px;color: #80a727; font-weight: 500;}
+div .new .item .price {margin-top: 5px;font-weight: bold;}
+button {
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+}
+button > a:hover {
+    background: #80a727;
+    color: #fff;
+    display: block;
+}
