@@ -19,7 +19,7 @@ import { ShareService } from '../shared/share.service';
   providers: [ShareService]
 })
 export class CustomerModule { }
-export class Customer {
+export class ShoppingForm {
   id: number; 
   FirstName:string; 
   LastName: string;
